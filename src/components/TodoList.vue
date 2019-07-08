@@ -1,20 +1,15 @@
-<template>
-  <table>
-    <thead>
-      <tr>
-        <th>タスク名</th>
-        <th>状態</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <TodoListItem
+<template lang="pug">
+  table
+    thead
+      tr
+        th タスク名
+        th 状態
+        th
+    tbody
+      TodoListItem(
         v-for="todo in todosFilteredByStatus"
         :key="todo.id"
-        :todo="todo"
-      />
-    </tbody>
-  </table>
+        :todo="todo")
 </template>
 
 

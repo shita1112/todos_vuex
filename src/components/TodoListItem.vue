@@ -1,13 +1,11 @@
-<template>
-  <tr :class="trClass">
-    <td>{{ todo.text }}</td>
-    <td>
-      <button @click="changeStatus(todo)">{{ todo.status }}</button>
-    </td>
-    <td>
-      <button @click="removeTodo(todo)">削除</button>
-    </td>
-  </tr>
+<template lang="pug">
+  tr(:class="trClass")
+    td
+      | {{ todo.text }}
+    td
+      button(@click="changeStatus(todo)") {{ todo.status }}
+    td
+      button(@click="removeTodo(todo)") 削除
 </template>
 
 <script>

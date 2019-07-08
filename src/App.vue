@@ -1,10 +1,9 @@
-<template>
-  <div id="app">
-    <CreateTodoTextField />
-    <TodoList />
-    <FilterStateRadioButtons />
-    <TodosCount />
-  </div>
+<template lang="pug">
+  #app
+    CreateTodoTextField
+    TodoList
+    FilterStateRadioButtons
+    TodosCount
 </template>
 
 <script>

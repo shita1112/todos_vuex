@@ -1,18 +1,16 @@
-<template>
-  <div>
-    <span>絞り込み：</span>
-    <!-- 更新しないのでkey属性は不要 -->
-    <label v-for="status in statuses">
-      <input
+<template lang="pug">
+  div
+    span 絞り込み：
+    //- 更新しないのでkey属性は不要
+    label(v-for="status in statuses")
+      input(
         type="radio"
         name="statusToFilter"
         :value="status"
         v-model="statusToFilter"
-        @change="changeStatusToFilter(status)"
-        >
-      {{ status }}
-    </label>
-  </div>
+        @change="changeStatusToFilter(status)")
+
+      |{{ status }}
 </template>
 
 

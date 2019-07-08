@@ -1,11 +1,11 @@
-<template>
-  <input
+<template lang="pug">
+  input(
     type="text"
     autofocus
     placeholder="タスク名"
     v-model="todoText"
     @keypress.enter="addTodo"
-  >
+  )
 </template>
 
 <script>

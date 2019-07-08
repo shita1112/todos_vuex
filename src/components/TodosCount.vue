@@ -1,8 +1,7 @@
-<template>
-  <div>
-    <span>件数：</span>
-    <span>{{ todosCount }}件</span>
-  </div>
+<template lang="pug">
+  div
+    span 件数：
+    span {{ todosCount }}件
 </template>
 
 <script>
